@@ -4,10 +4,10 @@ def my_select(collection)
   while i < collection.length
     if yield(collection[i])
       select_array << collection[i]
-      i = i + 1
-    else
-      nil
     end
+    i += 1
   end
   collection
 end
+
+
